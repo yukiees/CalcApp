@@ -15,6 +15,7 @@
 		9C99826224BA1B1600CE45B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C99826024BA1B1600CE45B3 /* LaunchScreen.storyboard */; };
 		9C99826D24BA1B1600CE45B3 /* CalcAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99826C24BA1B1600CE45B3 /* CalcAppTests.swift */; };
 		9C99827824BA1B1600CE45B3 /* CalcAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99827724BA1B1600CE45B3 /* CalcAppUITests.swift */; };
+		9C99828724BA1BB200CE45B3 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C99828624BA1BB200CE45B3 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9C99827324BA1B1600CE45B3 /* CalcAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C99827724BA1B1600CE45B3 /* CalcAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcAppUITests.swift; sourceTree = "<group>"; };
 		9C99827924BA1B1600CE45B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C99828624BA1BB200CE45B3 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		9C99825424BA1B0E00CE45B3 /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C99828524BA1B8A00CE45B3 /* model */,
 				9C99825524BA1B0E00CE45B3 /* AppDelegate.swift */,
 				9C99825724BA1B0E00CE45B3 /* SceneDelegate.swift */,
 				9C99825924BA1B0E00CE45B3 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				9C99827924BA1B1600CE45B3 /* Info.plist */,
 			);
 			path = CalcAppUITests;
+			sourceTree = "<group>";
+		};
+		9C99828524BA1B8A00CE45B3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9C99828624BA1BB200CE45B3 /* Car.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				9C99825A24BA1B0E00CE45B3 /* ViewController.swift in Sources */,
 				9C99825624BA1B0E00CE45B3 /* AppDelegate.swift in Sources */,
+				9C99828724BA1BB200CE45B3 /* Car.swift in Sources */,
 				9C99825824BA1B0E00CE45B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.matsushima.mukku.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
